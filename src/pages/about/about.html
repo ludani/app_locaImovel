@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Cadastre seu Imóvel
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label>Selecione se você é Locador ou Locatário</ion-label>
+      <ion-select [(ngModel)]="cidades">
+        <ion-option value="am">Locador</ion-option>
+        <ion-option value="int">Locatário</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+
+  <ion-item>
+    <ion-label>Cidade</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Bairro</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Endereço</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Complemento</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Cep</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Número</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Descrição</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label>Valor do Imóvel - R$:</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+
+  <!--BOTÃO INSERIR ANUNCIO-->
+  <button ion-button roun (click)="botaoinsere">Inserir Anuncio</button>
+</ion-content>
